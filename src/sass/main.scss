@@ -1,0 +1,50 @@
+@import './colors';
+@import './mixins';
+*,*::before,*::after
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    display: flex;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.2rem;
+    height: 100vh;
+    background-image: linear-gradient(0deg, $soft-blue-gradient 0%, $soft-violet-gradient 52%);
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 15px;
+    background-color: #fff;
+    &__img, &__pattern
+    {
+        position: absolute;
+        top: -10px;
+        left: 45%;
+        transform: translate(-50%, -50%);
+    }
+    &__pattern
+    {
+        top: 10px;
+    }
+    &__heading
+    {
+        margin-top: 3em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+@import './desktop';
