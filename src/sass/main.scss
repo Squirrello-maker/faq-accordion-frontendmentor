@@ -83,6 +83,7 @@ body
                 right: 0;
                 color: $soft-red;
                 font-size: 1.4rem;
+                transition: transform .3s;
             }
         }
         &__btn:hover
@@ -105,6 +106,10 @@ body
 .bold
 {
     font-weight: 700;
+}
+.rotate
+{
+    transform: rotate(-180deg);
 }
 
 @import './desktop';
