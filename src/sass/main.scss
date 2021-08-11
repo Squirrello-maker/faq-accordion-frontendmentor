@@ -19,6 +19,10 @@ body
     height: 100vh;
     background-image: linear-gradient(0deg, $soft-blue-gradient 0%, $soft-violet-gradient 52%);
 }
+.box
+{
+    display: none;
+}
 .container
 {
     display: flex;
@@ -37,6 +41,10 @@ body
         top: -10px;
         left: 45%;
         transform: translate(-50%, -50%);
+        &--desktop
+        {
+            display: none;
+        }
     }
     &__pattern
     {
@@ -77,8 +85,13 @@ body
         }
         &__info
         {
-            // display: none;
+            display: none;
             padding: .5em 1em .5em 0;
+
+        }
+        .active-item
+        {
+            display: block;
         }
     }
 }
