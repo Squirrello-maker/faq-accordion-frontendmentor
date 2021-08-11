@@ -75,6 +75,8 @@ body
             border: none;
             border-bottom: 1px solid $blue-divider;
             text-align: left;
+            transition: color .3s;
+            cursor: pointer;
             .fas
             {
                 position: absolute;
@@ -82,6 +84,10 @@ body
                 color: $soft-red;
                 font-size: 1.4rem;
             }
+        }
+        &__btn:hover
+        {
+            color: $soft-red;
         }
         &__info
         {
@@ -94,6 +100,10 @@ body
             display: block;
         }
     }
+}
+.bold
+{
+    font-weight: 700;
 }
 
 @import './desktop';

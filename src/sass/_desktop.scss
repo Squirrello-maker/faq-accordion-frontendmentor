@@ -12,6 +12,7 @@
     {
         flex-direction: row;
         overflow: hidden;
+        max-width: 800px;
         &__images
         {
             position: relative;
@@ -62,5 +63,8 @@
 }
 @media (min-width: 1440px)
 {
-
+    .container
+    {
+        width: 60%;
+    }
 }
